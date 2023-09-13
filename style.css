@@ -1,0 +1,112 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    padding: 0 70px;
+}
+
+nav li {
+    margin: 0 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 15px;
+    color: #333;
+}
+
+.logo a {
+    font-size: 25px;
+    color: #333;
+}
+
+header {
+    background-image: url("./assets/burger-bcg.jpg");
+    height: 400px;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #16d5e2;
+}
+
+.header-button .button {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.quote {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main+.quote {
+    background-color: #37e9e0;
+}
+
+h2 {
+    text-align: center;
+}
+
+#about { background-color: rgb(243, 248, 248);
+    text-align: justify;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    font-size: 20px;
+    width: 600px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    width: calc(100%/2);
+    height: calc(100%/2);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 400px;
+    margin: 20px auto;
+}
+
+form input { background-color: rgb(223, 223, 223);
+    margin: 15px 0;
+}
+
+#comments{ background-color: rgb(224, 224, 224);
+row-gap: 20px;
+columns: 40px;}
+
+input[type="submit"] {
+    background-color: #000;
+    color: aliceblue;
+    margin: 10px 0;
+}
+
+footer { background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+}
