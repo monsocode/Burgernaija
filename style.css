@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -22,36 +34,47 @@ nav ul {
 .logo a {
     font-size: 25px;
     color: #333;
+    margin: 0 30px;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
     background-image: url("./assets/burger-bcg.jpg");
     height: 400px;
+    background-image: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .header-text {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
+    letter-spacing: 5px;
+    top: 100px;
+    font-size: 30px;
     color: #16d5e2;
 }
 
-.header-button .button {
+.header-button a {
     background-color: #333;
-    display: flex;
-    justify-content: center;
+    /* justify-content: flex-end; */
     font-size: 20px;
     color: white;
-    width: 150px;
-    margin: 0 auto;
     text-decoration: none;
+    padding: 10px;
 }
 
 .quote {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 40px;
 }
 
 main+.quote {
@@ -60,14 +83,22 @@ main+.quote {
 
 h2 {
     text-align: center;
+    padding: 15px;
 }
 
-#about { background-color: rgb(243, 248, 248);
+#about {
+    background-color: rgb(243, 248, 248);
     text-align: justify;
     justify-content: space-evenly;
-    margin: 0 auto;
     font-size: 20px;
+    padding: 20px;
+
+}
+
+p {
     width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
 .photos {
@@ -89,13 +120,18 @@ form {
     margin: 20px auto;
 }
 
-form input { background-color: rgb(223, 223, 223);
+form input {
+    background-color: rgb(223, 223, 223);
+    padding: 10px 0;
     margin: 15px 0;
+    outline: none;
 }
 
-#comments{ background-color: rgb(224, 224, 224);
-row-gap: 20px;
-columns: 40px;}
+#comments {
+    background-color: rgb(224, 224, 224);
+    row-gap: 20px;
+    columns: 40px;
+}
 
 input[type="submit"] {
     background-color: #000;
@@ -103,10 +139,53 @@ input[type="submit"] {
     margin: 10px 0;
 }
 
-footer { background-color: #000;
+footer {
+    background-color: #000;
     color: white;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
 
+}
+
+@media screen and (max-width: 560px) {
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        margin: 10px auto;
+    }
+
+    .quote {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #about {
+        background-color: rgb(243, 248, 248);
+        text-align: justify;
+        justify-content: space-evenly;
+        font-size: 15px;
+        padding: 20px;
+
+    }
+
+    .photos {
+        flex-direction: column;
+    }
+
+    .photos img {
+        width: 100%;
+        height: 50%;
+    }
+
+    p {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .header-text {
+        font-size: 20px;
+    }
 }
