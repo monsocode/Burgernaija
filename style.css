@@ -51,6 +51,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
 
 }
 
@@ -152,9 +153,7 @@ footer {
         display: none;
     }
 
-    .logo {
-        margin: 10px auto;
-    }
+    .logo{ display: flex;}
 
     .quote {
         padding: 40px 0;
